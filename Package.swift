@@ -19,8 +19,8 @@ let package = Package(
     .library(name: "PrmDevCoreNetworking",      targets: [ "PrmDevCoreNetworking" ]),
   ],
   dependencies: [
-    .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.7.1"),
-    .package(url: "https://github.com/apple/swift-log", from: "1.12.0"),
+    .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.8.2"),
+    .package(url: "https://github.com/apple/swift-log", from: "1.14.0"),
   ],
   targets: [
     .target(name: "PrmDevCoreArgumentParser", dependencies: [
@@ -30,7 +30,7 @@ let package = Package(
     ]),
     .target(name: "PrmDevCoreAsyncSequence"),
     .target(name: "PrmDevCoreConsole"),
-    .target(name: "PrmDevCoreGeneral"),
+    .target(name: "PrmDevCoreGeneral", dependencies: [ "PrmDevCoreInterpolation" ]),
     .target(name: "PrmDevCoreInterpolation"),
     .target(name: "PrmDevCoreLogging", dependencies: [
       .product(name: "Logging", package: "swift-log"),

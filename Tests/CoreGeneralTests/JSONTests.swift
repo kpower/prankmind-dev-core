@@ -1,7 +1,7 @@
 // Copyright © 2026 PrankMind (Andrey Yakushev). All rights reserved.
 
 import Foundation
-import PrmDevCoreNetworking
+import PrmDevCoreGeneral
 import Testing
 
 struct JSONTests {

@@ -2,7 +2,6 @@
 
 internal import CoreFoundation
 import Foundation
-internal import PrmDevCoreGeneral
 internal import PrmDevCoreInterpolation
 
 public enum JSONValue: Codable, Equatable, Sendable {
